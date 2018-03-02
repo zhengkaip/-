@@ -1,0 +1,161 @@
+/**index.wxss**/
+.header{
+  display: flex;
+  height: 60rpx;
+  background: #fc5e2d;
+  color:#fff;
+  padding:10rpx 0;
+}
+.current-city{
+  display: flex;
+  box-sizing:border-box;
+  align-items:center;
+  width: 180rpx;
+  padding:0 20rpx;
+}
+.current-city text{
+  flex:1;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.current-city image{
+  width:15rpx;
+  height: 15rpx;
+  line-height: 60rpx;
+  margin-left: 10rpx;
+}
+.search-section{
+  flex: 1;
+}
+.search-input{
+  display: flex;
+  box-sizing:border-box;
+  align-items:center;
+  height: 60rpx;
+  background: #fff;
+  padding:20rpx;
+  border-radius:8rpx;
+}
+.search-input>icon{
+  padding:0 5rpx;
+}
+.search-input input{
+  flex: 1;
+  font-size:26rpx;
+  color:#666;
+}
+.ticket-section{
+  width: 50rpx;
+  padding:10rpx 20rpx;
+}
+.ticket-section>image{
+  width: 100%;
+  height: 40rpx;
+}
+.slide-image{
+  width: 100%;
+}
+.child-nav>view{
+  flex: 1;
+  padding-top: 200rpx;
+  text-align: center;
+  align-items:center;
+  font-size: 30rpx;
+  color:#666;
+}
+.scroll-view-H{
+   white-space: nowrap; 
+   display: flex
+}
+.section-title{
+  line-height: 100rpx;
+}
+.section-title text{
+  font-size: 30rpx;
+  border-left: 8rpx solid #fc5e2d;
+  padding-left: 10rpx;
+}
+.scroll-view-item-H{
+  display: inline-block;
+  width: 40%;
+  height:200rpx;
+  line-height: 200rpx;
+  margin-right: 20rpx;
+  border-radius: 8rpx;
+  text-align: center;
+}
+.scroll-view-item-H text{
+  color:#fff;
+}
+.cate{
+   display: inline-block;
+   width: 70%;
+   border:2rpx solid #666;
+   border-radius: 8rpx;
+   padding:20rpx;
+   margin-right: 10rpx;
+}
+.comment-user{
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom: 20rpx;
+}
+.comment-user .user-name{
+  display: flex;
+  flex: 1;
+}
+.comment-user .user-name text{
+  padding-left: 10rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  display: block;
+}
+.comment-user .photo{
+  width:60rpx;
+  height:60rpx;
+  border-radius: 50%;
+}
+.praise,.praise image{
+  width:50rpx;
+  height:50rpx;
+}
+.comment-content{
+  display: flex;
+  justify-content:space-between;
+}
+.comment-content .commet-text{
+  flex: 1;
+  height: 130rpx;
+  display: -webkit-box;
+  display: box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:3;
+  white-space: normal;
+  color:#666;
+  font-size: 32rpx;
+}
+.cate-image{
+  padding-left: 20rpx;
+}
+.cate-image image,.cate-image{
+  width: 130rpx;
+  height:130rpx;
+}
+.bc-green{
+  background: green;
+}
+.bc-red{
+  background: red;
+}
+.bc-yellow{
+  background: yellow;
+}
+.bc-blue{
+  background: blue;
+}

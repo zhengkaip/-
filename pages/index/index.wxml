@@ -1,0 +1,76 @@
+<!--index.wxml-->
+<view class="header">
+  <view class="current-city" bindtap="toCitySelect">
+    <text>{{city}}</text>
+    <image src='../../images/icon/home_bar_arrow.png'></image>
+  </view>
+  <view class="search-section">
+    <view class="search-input box">
+      <icon class="searchcion" size='20' type='search'></icon>
+      <input placeholder="请输入搜索内容" bindfocus="toSearch"/>
+    </view>
+  </view>
+  <view class="ticket-section">
+    <image class="ticket" src="/images/icon/home_bar_quan.png"></image>
+  </view>
+</view>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="key">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="child-nav box">
+    <view>享7券</view>
+    <view>餐厅</view>
+    <view>酒店</view>
+    <view>景点</view>
+    <view>休闲娱乐</view>
+</view>
+<view class="section prl20">
+  <view class="section-title">
+    <text>推荐餐厅</text>
+  </view>
+  <scroll-view class="scroll-view-H" scroll-x >
+    <view id="green" class="scroll-view-item-H bc-green store">
+      <text>麦当劳</text>
+    </view>
+    <view id="red"  class="scroll-view-item-H bc-red store">
+       <text>烤肉</text>
+    </view>
+    <view id="yellow" class="scroll-view-item-H bc-yellow store">
+      <text>日本菜</text>
+    </view>
+    <view id="blue" class="scroll-view-item-H bc-blue store">
+      <text>湘菜</text>
+    </view>
+  </scroll-view>
+</view>
+<view class="section prl20">
+  <view class="section-title">
+    <text>美食墙</text>
+  </view>
+  <scroll-view class="scroll-view-H" scroll-x>
+    <block wx:for="{{cateList}}" wx:key="key">
+    <view class="snormalcroll-view-item-H cate">
+      <view class="comment-user">
+        <view class="user-name">
+          <image class="photo" src="{{item.photo}}" ></image>
+          <text>{{item.user}}</text>
+        </view>
+        <view class="praise">
+          <image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=836933882,1802788120&fm=27&gp=0.jpg"></image>
+        </view>
+      </view>
+      <view class="comment-content">
+        <text class="commet-text">{{item.commetText}} </text>
+        <view class="cate-image">
+          <image src="{{item.cateImage}}"></image>
+        </view>
+      </view>
+    </view>
+    </block>
+  </scroll-view>
+</view>

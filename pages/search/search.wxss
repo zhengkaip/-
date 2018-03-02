@@ -1,0 +1,46 @@
+/* pages/search/search.wxss */
+.header{
+  display: flex;
+  display: -webkit-box;
+  height: 60rpx;
+  background: #fc5e2d;
+  font-size: 30rpx;
+  color: #fff;
+  padding:10rpx 40rpx;
+}
+.location{
+  width:15rpx;
+  height: 15rpx;
+  line-height: 60rpx;
+  margin-left: 10rpx;
+}
+.search-section{
+  flex: 1;
+  -webkit-box-flex:1;
+}
+.search-input{
+  display: flex;
+  box-sizing:border-box;
+  align-items:center;
+  background: #fff;
+  border-radius: 10rpx;
+  padding:5rpx;
+}
+.search-input>icon{
+  padding:0 5rpx;
+}
+.search-input input{
+  color:#666;
+  font-size: 26rpx;
+}
+.header text{
+  display: block;
+  line-height: 60rpx;
+  margin-left: 30rpx;
+}
+.search-item{
+  line-height: 80rpx;
+  font-size: 30rpx;
+  color:#666;
+  padding:0 20rpx;
+}

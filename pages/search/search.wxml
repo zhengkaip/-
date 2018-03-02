@@ -1,0 +1,15 @@
+<!--pages/search/search.wxml-->
+<view class="header">
+  <view class="search-section">
+    <view class="search-input">
+      <icon class="searchcion" size='20' type='search'></icon>
+      <input placeholder="请输入搜索内容" bindinput="searchKey"/>
+    </view>
+  </view>
+  <text bindtap='returnIndex'>取消</text>
+</view>
+<view class="search-list" wx:if="{{searchList.length}}">
+  <block wx:for="{{searchList}}" wx:key="{{item.id}}">
+    <view class="search-item">{{item.title}}</view>
+  </block>
+</view>

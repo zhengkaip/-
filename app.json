@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/search/search",
+    "pages/citySelect/citySelect",
+    "app.json"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fc5e2d",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#FF4411",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "selectedColor": "#FF4411",
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/home_tab_home.png",
+        "selectedIconPath": "images/icon/home_tab_homeed.png"
+      },
+      {
+        "selectedColor": "#FF4411",
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "images/icon/home_tab_huodong.png",
+        "selectedIconPath": "images/icon/home_tab_huodonged.png"
+      }
+    ]
+  }
+}
